@@ -11,3 +11,71 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(138, 138, 138, 0.5); /* Semi-transparent background */
+  z-index: 100;
+}
+
+.Modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+/* Modal Header */
+.Modal h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Modal Paragraph */
+.Modal p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.Modal button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.Modal button:hover {
+  background-color: #0056b3;
+}
+
+.Modal button.cancel {
+  background-color: #6c757d;
+}
+
+.Modal button.cancel:hover {
+  background-color: #5a6268;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.col input{
+  height: 24px;
+  margin-bottom: 20px;
+  width: 400px;
+  padding: 10px;
+}
